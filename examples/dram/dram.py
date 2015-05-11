@@ -14,6 +14,8 @@ class DRAM:
         self.dac_lut_offset = 0
         self.lutBuffer = 2**16
         self.offset = 0
+		self.dac_I = numpy.array(int())
+		self.dac_Q = numpy.array(int())
 
     def dacFreqCombLUT(self, frequencies = [0.0], amplitude = [1.0], phase = [0.0]):
         dac_bit_range = 2**15 - 1 #15 bits plus the sign bit
