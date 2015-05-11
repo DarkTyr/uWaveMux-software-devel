@@ -6,7 +6,7 @@ from numpy import *
 from corr import katcp_wrapper 
 fpga = katcp_wrapper.FpgaClient
 
-class Roach2NIST:
+class DRAM:
     def __init__(self, fpga):
         self.fpga = fpga
         #DAC LUT variables
